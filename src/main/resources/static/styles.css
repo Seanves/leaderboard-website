@@ -1,0 +1,72 @@
+:root {
+    --background-color: #373842;
+    --main-color: #ecece4
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-color);
+    font-family: Söhne, ui-sans-serif, system-ui, "Segoe UI", Roboto;
+    font-size: 32px;
+    text-align: center;
+}
+
+.board {
+    border: 2px solid var(--main-color);
+    width: 600px;
+    margin: 0 auto;
+}
+
+.board-table {
+    border-collapse: collapse;
+    margin: 70px auto;
+}
+
+.board-table th,
+.board-table td {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+/*  */
+
+.tooltip {
+    /*position: relative;*/
+    /*display: inline-block;*/
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50px);
+    min-width: 250px;
+    background-color: var(--background-color);
+    text-align: left;
+    padding: 5px;
+    border: 1px solid var(--main-color);
+}
+
+/*.tooltip .tooltiptext {*/
+/*    visibility: hidden;*/
+/*}*/
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext:hover {
+    visibility: hidden;
+}
+
+/*tr:hover {*/
+/*    background-color: #444552;*/
+/*}*/
+
+/*.board-table tbody {*/
+/*    transition: transform 0.5s;*/
+/*}*/
+
+/*.board-table tbody:hover {*/
+/*    transform: translate(0,-15px);*/
+/*}*/
